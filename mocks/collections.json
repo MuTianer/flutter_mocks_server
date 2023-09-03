@@ -1,0 +1,17 @@
+[
+  {
+    "id": "base",
+    "routes": [
+      "add-headers:enabled",
+      "get-users:success",
+      "get-user:success"
+    ]
+  },
+  {
+    "id": "wallet-plus-mock-api",
+    "from": "base",
+    "routes": [
+      "wallet-plus:success"
+    ]
+  }
+]
