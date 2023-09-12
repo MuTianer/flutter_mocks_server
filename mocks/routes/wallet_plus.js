@@ -26,4 +26,18 @@ module.exports = [
       },
     ],
   },
+  {
+    id: "proxy-all", // Proxy all requests
+    url: "*",
+    method: ["GET", "POST", "PATCH", "PUT"],
+    variants: [
+      {
+        id: "real-api",
+        type: "proxy", // This route variant will use the "proxy" handler
+        options: {
+          host: "http://127.0.0.1:8080", // proxy host
+        },
+      },
+    ],
+  },
 ];

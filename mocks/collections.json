@@ -11,7 +11,8 @@
     "id": "wallet-plus-mock-api",
     "from": "base",
     "routes": [
-      "wallet-plus:success"
+      "wallet-plus:success",
+      "proxy-all:real-api"
     ]
   }
 ]
