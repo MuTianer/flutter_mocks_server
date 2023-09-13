@@ -2,7 +2,7 @@ module.exports = [
   {
     id: "wallet-plus", // route id
     method: ["GET", "POST", "PUT", "PATCH"], // HTTP methods
-    url: "/ibank-api_local/noa/auth/login", // url in express format
+    url: "/ibank-api_local/noa/auth/login/xxx", // url in express format
     variants: [
       {
         id: "success", // variant id
