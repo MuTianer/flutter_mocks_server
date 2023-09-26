@@ -14,7 +14,7 @@ module.exports = [
             status: 1,
             errorCause: 0,
             errorLocation: 0,
-            errorBankId: '177',
+            errorBankId: '0177',
             authToken: '123456789012345678901234567890',
             lastLoginAt: '2020-01-01T00:00:11',
             passcodeSetting: '1',
