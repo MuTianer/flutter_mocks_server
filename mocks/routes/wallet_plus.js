@@ -1,8 +1,9 @@
 module.exports = [
+  // login
   {
     id: "wallet-plus", // route id
     method: ["GET", "POST", "PUT", "PATCH"], // HTTP methods
-    url: "/ibank-api_local/noa/auth/login/xxx", // url in express format
+    url: "/ibank-api_local/noa/auth/login", // url in express format
     variants: [
       {
         id: "success", // variant id
@@ -11,7 +12,7 @@ module.exports = [
           status: 200, // status to send
           body: {
             msgList: [],
-            status: 1,
+            status: 0,
             errorCause: 0,
             errorLocation: 0,
             errorBankId: '0177',
@@ -21,6 +22,28 @@ module.exports = [
             touchidSetting: '1',
             passcodeNumber: '001001',
             acountCertifielLimit: null,
+          }, // body to send
+        },
+      },
+    ],
+  },
+  // cotra test
+  {
+    id: "cotra-1", // route id
+    method: ["GET", "POST", "PUT", "PATCH"], // HTTP methods
+    url: "/ibank-api_local/cotra/login", // url in express format
+    variants: [
+      {
+        id: "success", // variant id
+        type: "json", // variant handler id
+        options: {
+          status: 200, // status to send
+          body: {
+            msgList: [],
+            status: 0,
+            errorCause: 0,
+            errorLocation: 0,
+            errorBankId: '0177',
           }, // body to send
         },
       },
