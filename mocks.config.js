@@ -50,7 +50,7 @@ module.exports = {
     },
     collections: {
       // Selected collection
-      selected: "wallet-plus-mock-api",
+      selected: "mock-api",
     },
   },
   server: {

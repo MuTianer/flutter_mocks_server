@@ -8,12 +8,11 @@ module.exports = [
         ]
     },
     {
-        "id": "wallet-plus-mock-api",
+        "id": "mock-api",
         "from": "base",
         "routes": [
             // custom api mock
-            "wallet-plus:success",
-            "cotra-1:success",
+            "xxx:success",
             // proxy function
             "proxy-all:real-api"
         ]
